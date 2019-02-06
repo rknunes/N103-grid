@@ -1,0 +1,67 @@
+body{
+    margin: 0;
+}
+#main{
+    display: grid;
+    grid-template-areas: 'header header header'
+                          'nav nav aside'
+                          'section section aside'
+                          'footer footer  footer';
+    grid-auto-rows: 10vh 15vh 35vh 25vh;
+    grid-column-gap: 10px;
+}
+header{
+    grid-area: header;
+    background-color: rgb(90, 66, 66);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+header a{
+    color: white;
+    font-size: 10pt;
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+header a:nth-child(4){
+    font-size: 16pt;
+    color: green;
+}
+header a:hover{
+    font-size: 13pt;
+    background-color: blueviolet;
+
+}
+nav{
+    grid-area: nav;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav h1{
+    color: rgb(156, 26, 47);
+    font-size: 25pt;;
+}
+aside{
+    grid-area: aside;
+    background-color: rebeccapurple;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+section{
+    grid-area: section;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+section img{
+    width: 200px;
+    height: auto;
+
+}
+footer{
+    grid-area: footer;
+    background-color: grey;
+}
